@@ -1,8 +1,7 @@
-# eve
-eve - Video Streaming Website in REACT JS and Python
+# eve - Video Streaming Website in REACT JS and Python
 
 A streaming website demo in React JS and Python API Backend.
-### Functonalities
+### Functionalities
 1. Responsive Website and Design
 2. Grid View in CSS
 3. Responsive Sidebar
