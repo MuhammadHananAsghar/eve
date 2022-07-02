@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    font-family: "EuclidRegular";
+    background: #060609;
+    overflow: hidden;
+}
+
+.app{
+    display: flex;
+    max-width: 350px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}

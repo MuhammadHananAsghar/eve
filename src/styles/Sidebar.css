@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  background: #060609;
+  box-shadow: 5px 0px 12px -12px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 5px 0px 12px -12px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: 5px 0px 12px -12px rgba(255, 255, 255, 0.5);
+  transition: 0.5s all ease-in-out;
+  position: relative;
+  top: 0;
+  left: -280px;
+  z-index: 11;
+}
+
+.sidebar .logo {
+  background: #060609;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0em 2.5em;
+  pointer-events: none;
+}
+.sidebar .logo::before{
+    content: ">";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background: rgb(255, 200, 48);
+    right: -1.9rem;
+    top: 2.8rem;
+    color: #060609;
+    font-size: 20px;
+    font-family: "EuclidBold";
+    text-align: center;
+    pointer-events: initial;
+    cursor: pointer;
+  }
+
+.sidebar .logo .lName {
+  color: #ffc830;
+  font-size: 2.5rem;
+  font-family: "Righteous", cursive;
+}
+.sidebar .logo .menu {
+  color: gray;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.sidebar .body {
+  color: gray;
+}
+.sidebar .body ul {
+  list-style-type: none;
+  padding: 10px 0rem;
+  padding-bottom: 20px;
+}
+.inactiveLI {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+  font-size: 14px;
+  transition: 0.2s all ease-in-out;
+  position: relative;
+  cursor: pointer;
+}
+.activeLI {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+  font-size: 14px;
+  transition: 0.2s all ease-in-out;
+  position: relative;
+  background: #1b1923;
+  color: #ffc830;
+}
+.activeLI::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #ffc830;
+  left: 0;
+  top: 0;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+.activeLI span,
+.inactiveLI span {
+  padding-left: 20px;
+}
+.activeLI span {
+  color: white;
+}
+.sidebar ul .icon {
+  font-size: 20px;
+}
+.sidebar ul .iconDiv {
+  padding-right: 22px;
+}
